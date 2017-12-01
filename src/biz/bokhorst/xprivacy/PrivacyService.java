@@ -105,9 +105,9 @@ public class PrivacyService extends IPrivacyService.Stub {
 	private Map<CRestriction, CRestriction> mAskedOnceCache = new HashMap<CRestriction, CRestriction>();
 	private Map<CRestriction, CRestriction> mRestrictionCache = new HashMap<CRestriction, CRestriction>();
 
-	private final long cMaxUsageDataHours = 12;
-	private final int cMaxUsageDataCount = 700;
-	private final int cMaxOnDemandDialog = 20; // seconds
+	private final long cMaxUsageDataHours = 24;
+	private final int cMaxUsageDataCount = 4000;
+	private final int cMaxOnDemandDialog = 15; // seconds
 
 	private ExecutorService mExecutor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors(),
 			new PriorityThreadFactory());
